@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 14%, 20%);
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.job-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(180, 29%, 50%);
+}
+
+.new {
+  background: hsl(180, 29%, 50%);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.featured {
+  background: hsl(180, 14%, 20%);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.position h3 {
+  font-size: 18px;
+  color: hsl(180, 14%, 20%);
+  cursor: pointer;
+}
+
+.position h3:hover {
+  color: hsl(180, 29%, 50%);
+}
+
+.anotherInfo {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: hsl(180, 8%, 52%);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags button {
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tags button:hover {
+  background: hsl(180, 29%, 50%);
+  color: white;
+}
+
+.filter-bar {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-bar.hidden {
+  display: none;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: hsl(180, 52%, 96%);
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.tag button.remove {
+  border: none;
+  background: hsl(180, 29%, 50%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.tag button.remove:hover {
+  background: hsl(180, 14%, 20%);
+}
+
+.clear {
+  border: none;
+  background: transparent;
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.clear:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .job-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .tags {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+}
